@@ -1,0 +1,302 @@
+:root {
+  /* ===== =====>>  Font Size  <<===== =====  */
+  --xxxl-fs: 2.2rem;
+  --xxl-fs: 1.8rem;
+  --xl-fs: 1.6rem;
+  --l-fs: 1.4rem;
+  --m-fs: 1.2rem;
+  --s-fs: 1.1rem;
+  --xs-fs: 1rem;
+
+  /* =====>>  Margin  <<===== */
+  --m-2-5: 2.5rem;
+  --m-1-8: 1.8rem;
+  --m-1-5: 1.5rem;
+  --m-0-6: 0.6rem;
+  --m-0-5: 0.5rem;
+  --m-0-3: 0.3rem;
+
+  /* =====>>  Padding  <<===== */
+  --p-2-5: 2.5rem;
+  --p-1-5: 1.5rem;
+  --p-1-0: 1rem;
+  --p-0-8: 0.8rem;
+  --p-0-5: 0.5rem;
+  --p-0-4: 0.4rem;
+  --p-0-3: 0.3rem;
+}
+
+
+
+.profile-container {
+  position: relative;
+  height: 100vh;
+  background: white;
+  margin: 0 auto;
+  width: 100%;
+  padding: var(--p-1-5);
+
+}
+
+
+
+
+.profile-container .card {
+  background: White;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  padding: var(--p-1-5);
+  
+}
+
+
+.profile-container .userProfile,.ad_section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  width: 30%;
+}
+.profile-container .userProfile .profile figure img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+.profile-container .ad_section {
+  padding: var(--p-1-5);
+  width: 30%;
+ 
+}
+.userDetails,.info_about {
+  position: relative;
+  padding: var(--p-1-5) var(--p-2-5);
+  width: 70%;
+}
+
+.userDetails .userName h1 {
+  font-size: var(--xxxl-fs);
+}
+
+
+
+.userDetails .userName p {
+  font-size: var(--m-fs);
+  font-weight: 700;
+  color: #0099cc;
+  margin-bottom: var(--m-1-8);
+}
+
+.userDetails .rank {
+  position: relative;
+  margin-bottom: var(--m-1-8);
+}
+
+.userDetails .rank .heading {
+  font-size: var(--xs-fs);
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  margin-bottom: var(--m-0-6);
+}
+
+.userDetails .rank span {
+  font-size: var(--xxl-fs);
+  font-weight: 700;
+}
+
+.userDetails .rank .rating {
+  position: absolute;
+  top: 2.7rem;
+  left: 3.5rem;
+}
+
+.userDetails .rank .rating .rate {
+  color: #0099cc;
+  font-size: var(--l-fs);
+}
+
+.userDetails .rank .rating .underrate {
+  color: #88cee6;
+}
+
+.userDetails .btns ul,
+.userDetails .btns ul li {
+  display: flex;
+  align-items: center;
+}
+
+.userDetails .btns ul li {
+  margin-right: var(--m-2-5);
+  border-radius: 0.5rem;
+}
+
+.userDetails .btns ul li .ri {
+  margin-right: var(--m-0-5);
+  font-size: var(--xl-fs);
+}
+
+.userDetails .btns ul li a {
+  font-size: var(--l-fs);
+  color: #fff;
+  font-weight: 500;
+}
+
+.userDetails .btns ul .active {
+  background: #e6f2ff;
+  padding: var(--p-0-5) var(--p-1-5);
+}
+
+.userDetails .btns ul .active a,
+.userDetails .btns ul .active .ri {
+  color: #0099cc;
+}
+
+
+.info_about {
+  padding: var(--p-2-5);
+  width: 70%;
+}
+
+.info_about .tabs ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--m-2-5);
+}
+
+.info_about .tabs ul::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.info_about .tabs ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: var(--m-2-5);
+  padding-bottom: var(--p-0-8);
+  cursor: pointer;
+}
+
+.info_about .tabs ul li span {
+  font-size: var(--l-fs);
+  font-weight: 500;
+}
+
+
+.info_about .tabs ul .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--bg5-color);
+}
+
+.info_about .contact_info .heading,
+.info_about .basic_info .heading {
+  font-size: var(--xs-fs);
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  margin-bottom: var(--m-1-5);
+}
+
+.info_about .contact_info ul,
+.info_about .basic_info ul {
+  margin-bottom: var(--m-1-5);
+}
+
+.info_about .contact_info ul li,
+.info_about .basic_info ul li {
+  display: flex;
+  margin: var(--m-0-5) 0;
+}
+
+.info_about .contact_info ul li h1,
+.info_about .basic_info ul li h1 {
+  font-weight: 500;
+  font-size: var(--m-fs);
+  min-width: 12rem;
+}
+
+.info_about .contact_info ul li span,
+.info_about .basic_info ul li span {
+  font-size: var(--m-fs);
+}
+
+.info_about .contact_info ul .phone span,
+.info_about .contact_info ul .email span,
+.info_about .contact_info ul .site span {
+  color: #0099cc;
+}
+.btns{
+  margin-left: 75%;
+
+}
+
+@media screen and (max-width: 990px) {
+
+}
+  
+@media screen and (max-width: 768px) {
+
+  :root {
+  
+    --xxxl-fs: 20px;
+    --xxl-fs: 18px;
+    --xl-fs: 16px;
+    --l-fs: 14px;
+    --m-fs: 12px;
+    --s-fs: 11px;
+    --xs-fs: 10px; 
+   
+    --m-2-5: 25px;
+    --m-1-8: 18px;
+    --m-1-5: 15px;
+    --m-0-6: 6px;
+    --m-0-5: 5px;
+    --m-0-3: 3px;
+
+    --p-2-5: 25px;
+    --p-1-5: 15px;
+    --p-1-0: 10px;
+    --p-0-8: 8px;
+    --p-0-5: 5px;
+    --p-0-4: 4px;
+    --p-0-3: 3px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .profile-container {
+      position: relative;
+      width: 100%;
+      padding: 10px;  
+    }
+    .profile-container .userProfile{
+      display: none;
+  
+    }    
+    .profile-container .ad_section{
+      display: none;
+    }
+    .userDetails, .info_about {
+      width: 97%;
+      margin: 5px;
+    }
+
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+   
+  }  
+
+}

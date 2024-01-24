@@ -1,0 +1,91 @@
+.fcontainer {
+    margin: 0;
+    width: 100%;
+    background: white;
+    padding: 2% 0;
+}
+
+
+
+.fitems-fcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fitem {
+    width: 24%;
+    border: 1px solid white;
+ 
+    text-align: center;
+    padding: 35px;
+   
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+.fitem-icon {
+    width: 100px;
+    height: 100px;
+    /* padding: 5%; */
+    border-radius: 50px;
+}
+
+#map-icon {
+    background-color: #ffe6df;
+}
+
+#coin-icon {
+    background-color: #dff0fe;
+}
+
+#comparison-icon {
+    /* background-color: #fcf3df; */
+}
+
+#laptop-icon {
+    background-color: #eff2ff;
+}
+
+.fitem-details {
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    font-style: oblique;
+    font-weight: 500;
+    margin-top: 3%;
+}
+
+
+
+
+
+/* */
+
+@media (max-width: 991px) {}
+
+@media screen and (max-width: 768px) {
+    .fitem {
+        width: 49%;
+        padding: 15px;
+
+    }
+
+
+
+}
+
+@media (max-width: 575px) {
+    .fitem {
+        width: 90%;
+        padding: 10px;
+
+    }
+    .fitem-details {
+   
+        font-size: 14px;
+
+    }
+}
