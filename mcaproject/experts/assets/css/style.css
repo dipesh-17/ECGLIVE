@@ -1,0 +1,10 @@
+#zoomModalImg{
+    margin: 50% auto;
+}
+
+@media (min-width: 640px) { 
+    #zoomModalImg{
+        margin: 20% auto;
+    }
+
+ }
