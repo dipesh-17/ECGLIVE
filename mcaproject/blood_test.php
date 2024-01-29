@@ -34,7 +34,6 @@ if (!isset($_SESSION["fname"]) || !isset($_SESSION['userid'])) {
   </style>
 </head>
 <body>
-
 <?php
     require './inc/header.php';
 ?>
