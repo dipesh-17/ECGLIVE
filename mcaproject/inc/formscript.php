@@ -32,5 +32,4 @@
                 form1.style.left = "15%";
             }
         }
-
-    </script>
+</script>
