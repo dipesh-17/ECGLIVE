@@ -1,4 +1,3 @@
-
       <div class="row bnm">
       <u><h2 class="section-title pb-2">Plans</h2></u>
  
@@ -96,5 +95,4 @@
 function loginplease(){
     window.location.replace("login.php");
 }
-</script>
-   
+</script>   
